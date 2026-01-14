@@ -11,6 +11,7 @@ header {
 }
 
 .genLayout {
+border: 2px solid red;
   max-width: 1000px;
   margin: auto;
 }
