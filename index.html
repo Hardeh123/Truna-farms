@@ -4,173 +4,195 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Truna agro</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="headerOne genLayout">
-        <div class="logo">
-          <img src="./images/truna.png" alt="logo" />
-          <span>Truna Farms</span>
+  
+      <section class="header-nav genLayout">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-ligh bgColor">
+          <div class="container">
+            <a 
+              href="#"
+              class="navbar-brand navImg text-white">
+              <img src="./images/Truna-logo.png"width="60" height="60" alt="Truna">Truna Farms
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 lg-0 mx-4" >
+                <li class="nav-item fw-bold">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Available at:
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">
+                    Current Location
+                    <span class="Mid-text fw-bold">Agro farms Ibadan </span>
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex loginBtn">
+                <span class="txtBtn mx-4 py-2"><img src="./images/search-agro.png"width="30" height="30" alt=""> search Agro</span>
+                <button class="btn btn-outline-success " type="submit"><img src="./images/user-image.png" alt="user" width="30" height="30" >Login</button>
+              </form>
 
-          <div class="location">
-            <p>
-              Deliver to: <img src="./images/map.png" alt="location" />
-              <span>current location</span>
-              Agro Farm Ibadan
-            </p>
-            <div class="icons">
-              <p>
-                <img src="./images/Search.png" alt="Search" />
-                Search Products
-              </p>
-              <button class="loginbtn">
-                <img class="icon" src="./images/user.png" alt="" />
-                Login
-              </button>
+            </div>
+          </div>
+          
+        </nav>
+      </section>
+    
+
+    <main>
+      <section class="hero-section">
+        <div class="hero genLayout">
+          <h1>Looking for fresh farm produce?</h1>
+          <p>Our Products are truly natural deeply rooted</p>
+
+          <div class="heroimg">
+            <img src="./images/heroimg.png" alt="truna" />
+          </div>
+
+          <div class="herocontents">
+            <div class="herotabs">
+              <button class="active">&#127793; Crops</button>
+              <button>&#128004; Livestock</button>
+            </div>
+
+            <div class="searchinput">
+              <input
+                type="text"
+                placeholder="Search crops, produce or location"
+              />
+              <button>Find produce</button>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="hero genLayout">
-        <h1>Looking for fresh farm produce?</h1>
-        <p>Our Products are truly natural deeply rooted</p>
+      </section>
 
-        <div class="heroimg">
-          <img src="./images/heroimg.png" alt="truna" />
-        </div>
-
-        <div class="herocontents">
-          <div class="herotabs">
-            <button class="active">&#127793; Crops</button>
-            <button>&#128004; Livestock</button>
+      <section class="Agro-contents genLayout">
+          <div class="Agro-img">
+            <img src="./images/Agro 1.png" alt="agroimg" />
+            <p>
+              Organic Greens <br />     
+              <span>Fresh supply ready</span>
+            </p>
           </div>
-
-          <div class="searchinput">
-            <input
-              type="text"
-              placeholder="Search crops, produce or location"
-            />
-            <button>Find produce</button>
+          <div class="Agro-img">            
+            <img src="./images/Agro2.png" alt="agroimg" />
+            <p>
+              Organic Greens <br />
+              <span>Fresh supply ready</span>
+            </p>
           </div>
-        </div>
-      </div>
+          <div class="Agro-img">
+            <img src="./images/Agro3.png" alt="agroimg" />
+            <p>
+              Organic Greens <br />
+              <span>Fresh supply ready</span>
+            </p>
+          </div>
+          <div class="Agro-img">
+            <img src="./images/Agro4.png" alt="agroimg" />
+            <p>
+              Organic Greens <br />
+              <span>Fresh supply ready</span>
+            </p>
+          </div>
+        </section>
 
-      <div class="maincontents genLayout">
-        <div class="imgone">
-          <img src="./images/Agro 1.png" alt="agroimg" />
-          <p>
-            Organic Greens <br />
-            <span>Fresh supply ready</span>
-          </p>
+      <section class="Secondmain">
+        <div class="info-tabs genLayout">
+          <h1 class="headerTwo">How does it work</h1>
+          <div class="info-wrapper">
+            <div class="image-tabs">
+              <img src="./images/choose Agro.png" alt="cart img" />
+              <h2>Choose Agro</h2>
+              <span>Explore different categories of modern agriculture.</span>
+            </div>
+            <div class="image-tabs">
+              <img src="./images/verified.png" alt="cart img" />
+              <h2>Healthy food for you</h2>
+              <span>Farm fresh produce, naturally grown and chemical-free.</span>
+            </div>
+            <div class="image-tabs">
+              <img src="./images/location.png" alt="location img" />
+              <h2>Select location</h2>
+              <span
+                >Choose your location to find nearby stores selling our
+                products.</span
+              >
+            </div>
+            <div class="image-tabs">
+              <img src="./images/mail.png" alt="contact img" />
+              <h2>Contact us</h2>
+              <span
+                >Contact us for bulk livestock and plant produce delivery with live
+                updates.</span
+              >
+          </div>
+          </div>  
         </div>
-        <div class="imgtwo">
-          <img src="./images/Agro2.png" alt="agroimg" />
-          <p>
-            Organic Greens <br />
-            <span>Fresh supply ready</span>
-          </p>
-        </div>
-        <div class="imgthree">
-          <img src="./images/Agro3.png" alt="agroimg" />
-          <p>
-            Organic Greens <br />
-            <span>Fresh supply ready</span>
-          </p>
-        </div>
-        <div class="imgfour">
-          <img src="./images/Agro4.png" alt="agroimg" />
-          <p>
-            Organic Greens <br />
-            <span>Fresh supply ready</span>
-          </p>
-        </div>
-      </div>
+      </section>
 
-      <div class="Secondmain">
-        <div class="headertwo">
-          <h1>How does it work</h1>
-        </div>
-
-        <div class="categorytab">
-          <img src="./images/category.png" alt="cart img" />
-          <h2>Choose Agro</h2>
-          <span>Explore different categories of modern agriculture.</span>
-        </div>
-        <div class="infotab">
-          <img src="./images/mark.png" alt="cart img" />
-          <h2>Healthy food for you</h2>
-          <span>Farm fresh produce, naturally grown and chemical-free.</span>
-        </div>
-        <div class="locationtab">
-          <img src="./images/locate.png" alt="location img" />
-          <h2>Select location</h2>
-          <span
-            >Choose your location to find nearby stores selling our
-            products.</span
-          >
-        </div>
-        <div class="contacttab">
-          <img src="./images/contact.png" alt="contact img" />
-          <h2>Contact us</h2>
-          <span
-            >Contact us for bulk livestock and plant produce delivery with live
-            updates.</span
-          >
-        </div>
-      </div>
-
-      <div class="Thirdmain genLayout">
-        <div class="headerthree">
-          <h1>Our Farm Fields</h1>
-          <div class="scroll">
+      <section class="Thirdmain">
+        <div class="field-wrapper">
+          <h1 class="field-header">Our Farm Fields</h1>
+          <div class="scroll-tab">  
             <button class="arrowLeft">
-              <img src="./images/arrowLeft.png" alt="" />
+              <img src="./images/left-arrow.png" alt="arrow" />
             </button>
             <span class="line"></span>
             <button class="arrowRight">
-              <img src="./images/arrowRight.png" alt="" />
+              <img src="./images/right-arrow.png" alt="arrow" />
             </button>
           </div>
+          <div class="field-tabs genLayout">
+            <div class="field-items">
+              <img src="./images/apricot.png" alt="apricot" />
+              <p>Apricot plant</p>
+              <span><img src="./images/pin.png" alt="pin" />truna crops</span>
+              <p>stock</p>
+              <button>Explore Products</button>
+            </div>
+            <div class="field-items">
+              <img src="./images/cucumber.png" alt="cucumber" />
+              <p>Cucumber plant</p>
+              <span><img src="./images/pin.png" alt="pin" />truna crops</span>
+              <p>stock</p>
+              <button>Explore Products</button>
+            </div>
+            <div class="field-items">
+              <img src="./images/cattle.png" alt="cattle" />
+              <p>Cow & hay feed store</p>
+              <span><img src="./images/pin.png" alt="pin" />truna farms</span>
+              <p>stock</p>
+              <button>Explore Products</button>
+            </div>
+            <div class="field-items">
+              <img src="./images/bee.png" alt="bee" />
+              <p>Bee works</p>
+              <span><img src="./images/pin.png" alt="pin" />truna beework</span>
+              <p>stock</p>
+              <button>Explore Products</button>
+            </div>
+            <div class="field-items">
+              <img src="./images/coconut tree.png" alt="bee" />
+              <p>Palm trees</p>
+              <span><img src="./images/pin.png" alt="pin" />truna crops</span>
+              <p>stock</p>
+              <button>Explore Products</button>
+            </div>
+          </div>
+
         </div>
-        <div class="itemOne">
-          <img src="./images/apricot.png" alt="apricot" />
-          <p>Apricot plant</p>
-          <span><img src="./images/pin.png" alt="pin" />truna crops</span>
-          <p>stock</p>
-          <button>Explore Products</button>
-        </div>
-        <div class="itemTwo">
-          <img src="./images/cucumber.png" alt="cucumber" />
-          <p>Cucumber plant</p>
-          <span><img src="./images/pin.png" alt="pin" />truna crops</span>
-          <p>stock</p>
-          <button>Explore Products</button>
-        </div>
-        <div class="itemThree">
-          <img src="./images/cattle.png" alt="cattle" />
-          <p>Cow & hay feed store</p>
-          <span><img src="./images/pin.png" alt="pin" />truna farms</span>
-          <p>stock</p>
-          <button>Explore Products</button>
-        </div>
-        <div class="itemFour">
-          <img src="./images/bee.png" alt="bee" />
-          <p>Bee works</p>
-          <span><img src="./images/pin.png" alt="pin" />truna beework</span>
-          <p>stock</p>
-          <button>Explore Products</button>
-        </div>
-        <div class="itemFive">
-          <img src="./images/coconut tree.png" alt="bee" />
-          <p>Palm trees</p>
-          <span><img src="./images/pin.png" alt="pin" />truna crops</span>
-          <p>stock</p>
-          <button>Explore Products</button>
-        </div>
-      </div>
+      </section>
+        
 
       <section class="featured-section genLayout">
         <h2 class="featured-header">Featured Sellers</h2>
@@ -450,6 +472,54 @@
           </div>
         </div>
       </section>
+
+      <section class="promo-section">
+        <div class="promo-container genLayout">
+          <div class="promo-item">
+            <div class="promo-text">
+              <h3>Fresh Harvests <span>Organic Vegetables</span></h3>
+              <p>Get freshly harvested vegetables directly from our farms.
+                No preservatives, no long storage just clean, healthy produce.
+              </p>
+              <button>Proceed to order</button>
+            </div>
+            <div class="promo-img">
+              <img src="./images/Promo-Image-One.png" alt="Images">
+            </div>
+          </div>
+
+          <div class="promo-item reverse ">
+            <div class="promo-img">
+              <img src="./images/Promo-Image-Two.png" alt="Images">
+            </div>
+
+            <div class="promo-text">
+              <h3>Premium Grains & <span>Farm Produce</span></h3>
+              <p>From maize and rice to beans and groundnuts,
+                we supply clean, well-processed grains in bulk or retail quantities.
+              </p>
+              <button>Explore farm produce</button>
+            </div>
+          </div>
+
+            <div class="promo-item">
+              <div class="promo-text">
+                <h3>Eat happy with healthy fruits for <span>you</span></h3>
+                <p>Enjoy Our premium fruit basket with friends and family</p>
+                <button>Proceed to order</button>
+              </div>
+
+              <div class="promo-img">
+                <img src="./images/Promo-Image-Three.png" alt="Images">
+              </div>
+            </div>
+
+        </div>
+      </section>
+
+
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
