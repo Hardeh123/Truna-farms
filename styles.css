@@ -174,9 +174,13 @@ main {
     flex-direction: column;
   }
 
-  .searchinput input,
-  .searchinput button {
+  .searchinput > input {
     width: 100%;
+    
+  }
+  .searchinput > button {
+    width: 100%;
+    
   }
 
   .heroimg > img {
@@ -224,6 +228,18 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .Agro-contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 10px;
+    }
+  .Agro-img > img {
+    width: 11rem;
+    height: 8rem;
+    border-radius: 6px;
+}
+  }
+@media (max-width: 600px) {
   .Agro-contents {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -286,7 +302,7 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-   .info-wrapper {
+  .info-wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -294,10 +310,25 @@ main {
   }
 
   .image-tabs > img {
-  width: 100px;
-  height: 100px;
-  margin-left: 150px;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+  }
+
 }
+@media (max-width: 600px) {
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .image-tabs > img {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+  }
 
 }
 .Thirdmain {
@@ -370,9 +401,8 @@ span > img {
   margin-top: 5px;
   color: #212121;
   font-family: "Roboto Slab", serif;
-  
-
 }
+
 .field-items > span {
   color:#2f8f46;
 }
@@ -424,6 +454,47 @@ span > img {
   border-radius: 9px;
 }
 }
+.featured-section {
+  padding: 60px 0;
+  background: #ffffff;
+}
+@media (max-width: 600px) {
+  .field-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    justify-items: center;
+  }
+  
+.scroll-tab {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.field-tabs > :last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+.field-items:last-child > p {
+  text-align: center;
+}
+.field-items:last-child > span {
+  margin-left: 50px;
+}
+
+.field-items > img {
+  margin-top: 2rem;
+  width: 170px;
+  height: 150px;
+  border-radius: 9px;
+}
+}
+
 .featured-section {
   padding: 60px 0;
   background: #ffffff;
@@ -560,42 +631,54 @@ span > img {
   box-shadow: 0 10px 22px rgba(255, 183, 3, 0.55);
 }
 
+/* Responsive Design */
+@media (max-width: 768px){
+  .featured-grid {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 24px;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 600px){
+  .featured-grid {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 24px;
+    padding: 0px 20px;
+  }
+}
+
 .search-section {
-  height: 20rem;
   background: rgba(240, 255, 255, 0.752);
+  padding-bottom: 50px;
 }
 
-.section-tab {
+.first-header {
   display: flex;
   align-items: center;
+  padding: 30px 0px 30px;
+  align-items: center;
   justify-content: space-between;
-  padding: 30px 0;
 }
-
-.section-tab > h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 110px;
-  font-family: "Roboto Slab", serif;
+.first-header > h1 {
+  margin-right: 230px;
   color: #212121;
   font-size: 30px;
-  padding: 20px 24px;
-}
-
-p > span {
   font-family: "Roboto Slab", serif;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
-p > img {
-  margin-right: 110px;
-  gap: 40px;
-  width: 100px;
-  gap: 20px;
-  filter: hue-rotate(100deg) brightness(0.7) saturate(0.7) contrast(2.5);
+.first-header > p {
+  color: #2f8f46;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+
 }
 
 .search-list {
@@ -605,13 +688,19 @@ p > img {
   flex-wrap: wrap;
 }
 
+.first-header > p img {
+  filter: hue-rotate(100deg) brightness(0.7) saturate(0.7) contrast(2.5);
+  width: 130px;
+}
+
 .agro-item > img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin: auto;
+  
 }
 
 .agro-item > span {
@@ -621,6 +710,62 @@ p > img {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .first-header {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px ;
+  }
+  .first-header > h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .first-header > p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 10px 0px 20px;
+  }
+  .Button-image{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .agro-item > img {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media (max-width: 600px) {
+  .first-header {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px ;
+  }
+  .first-header > h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .first-header > p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 10px 0px 20px;
+  }
+  .Button-image{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .agro-item > img {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
 
 .App-section {
@@ -642,7 +787,7 @@ p > img {
   gap: 1rem;
   padding: 1.5rem 5rem;
   border-radius: 16px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 3rem auto;
   font-family: "Roboto Slab", serif;
 }
@@ -705,6 +850,128 @@ p > img {
   filter: hue-rotate(100deg) brightness(0.7) saturate(0.7) contrast(2.5);
 }
 
+.app-images {
+  position: relative;
+}
+
+.app-images > img {
+  width: 400px;
+  position: absolute;
+  bottom: -185px;
+  max-width: none;
+  padding: 40px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-bar {
+  max-width: 700px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+.feature-item > h4 {
+  font-size: 20px;
+}
+
+.feature-item > img {
+  filter: hue-rotate(100deg) brightness(0.7) saturate(0.7) contrast(2.5);
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  
+}
+ 
+  .app-images {
+    position: static;
+    justify-content: center;
+    min-height: 120px;
+  }
+
+  .app-images > img {
+    bottom: -10px;
+    width: 250px;
+    padding: 0;
+  }
+
+  .app-text {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .app-text > h2 {
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .store-apps {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .storeOne > img,
+  .storeTwo > img {
+    width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .feature-bar {
+  max-width: 700px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+.feature-item > h4 {
+  font-size: 20px;
+}
+
+.feature-item > img {
+  filter: hue-rotate(100deg) brightness(0.7) saturate(0.7) contrast(2.5);
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  
+}
+ 
+  .app-images {
+    position: static;
+    justify-content: center;
+    min-height: 120px;
+  }
+
+  .app-images > img {
+    bottom: -10px;
+    width: 250px;
+    padding: 0;
+  }
+
+  .app-text {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .app-text > h2 {
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .store-apps {
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .storeOne > img,
+  .storeTwo > img {
+    width: 140px;
+  }
+}
+
+
+
 .promo-section {
   padding: 4rem 1rem;
   background: azure;
@@ -726,9 +993,6 @@ p > img {
   border-radius: 12px;
 }
 
-/* .promo-item.reverse {
-  flex-direction: row-reverse;
-} */
 .promo-text,
 .promo-img {
   flex: 1;
@@ -744,7 +1008,7 @@ p > img {
   color: #2f8f46;
 }
 
-.promo-text p {
+.promo-text > p {
   color: #666;
   margin-bottom: 1.2rem;
 }
@@ -761,12 +1025,17 @@ p > img {
 .promo-img > img {
  width: 650px;
  height: 300px;
-  object-fit: cover;
   border-radius: 10px;
 }
 
-/* Mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
+  .promo-item,
+  .promo-item.reverse {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
   .promo-item,
   .promo-item.reverse {
     flex-direction: column;
