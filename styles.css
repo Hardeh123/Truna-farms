@@ -817,7 +817,7 @@ span > img {
 
   .app-text {
     text-align: center;
-    margin-left: 110px;
+    margin-left: 90px;
     margin-top: 40px;
   }
 
@@ -836,12 +836,10 @@ span > img {
   }
 
   .storeOne > img {
-    margin-left: 0px;
     width: 120px;
     
   }
   .storeTwo > img {
-    margin-left: 30px;
     width: 120px;
   }
 }
@@ -912,35 +910,12 @@ span > img {
   .promo-item.reverse {
     flex-direction: column;
   }
-
-  .promo-img {
-    object-fit: cover;
-    max-width: 600px;
-
-  }
-
+  
   .promo-img > img {
-    width: 500px;
+    width: 400px;
     height: 350px;
     border-radius: 20px;
   }
 
 }
-@media (max-width: 600px) {
-  .promo-item,
-  .promo-item.reverse {
-    flex-direction: column;
-  }
 
-  .promo-img {
-    object-fit: cover;
-    max-width: 600px;
-
-  }
-
-  .promo-img > img {
-    width: 500px;
-    height: 350px;
-    border-radius: 20px;
-}
-}
