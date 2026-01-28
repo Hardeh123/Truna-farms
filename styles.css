@@ -919,3 +919,315 @@ span > img {
 
 }
 
+.booking-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("./images/background-menu.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-tab {
+  padding: 80px 0;
+}
+
+.menu-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.booking-section > h1 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.menu-header{
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+
+
+}
+.menu-button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Responsive Design */
+
+@media (max-width: 760px) {
+  .booking-section {
+    background-image: url("./images/background-menu.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  .booking-section > h1 {
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    
+  }
+  .menu-header {
+    font-family: "Roboto Slab", serif;
+    width: 350px;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+
+  .menu-button {
+    padding: 10px 15px;
+    margin-top: 30px;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .menu-tab {
+    padding: 30px;
+  }
+}
+
+.footer {
+  background: #2f2f2f;
+  color: #fff;
+  padding: 60px 30px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+.footer-bottom, 
+.footer-links,
+.cities-grid {
+  display: flex;
+  gap: 100px;
+}
+
+
+.footer-title,
+.footer h4 {
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+.cities-grid ul {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.cities-grid li {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 40px 0;
+  max-width: 1000px;
+  margin-left: 45px;
+}
+
+
+.footer-bottom {
+  justify-content: space-between;
+}
+
+
+.footer-links {
+  flex: 3;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+
+.footer-social {
+  flex: 2;
+}
+
+.footer-social > h4 {
+  margin-left: 23px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icons > span > img  {
+  width: 20px;
+  margin-left: 23px;
+}
+
+.footer-text {
+  margin-top: 30px;
+  font-size: 14px;
+  margin-left: 23px;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 23px;
+}
+
+.newsletter > input {
+  flex: 1;
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background: #424242;
+  border-radius: 8px;
+}
+
+.newsletter > button {
+  padding: 10px 14px;
+  background: #2e7d32;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+.footer-divider-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: 45px;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.footer-name > span {
+  color: #2e7d32;
+  font-size: 14px;
+  
+}
+
+/* Respoonsive Design */
+@media (max-width: 760px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .cities-grid {
+    padding: 0px 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-title {
+    padding: 0px 10px;
+  }
+
+  .cities-grid li {
+    flex: 0 0 48%; 
+    font-size: 11px;
+  }
+
+  .footer-divider {
+    margin: 30px 0;
+  }
+  .footer-divider-bottom {
+    margin: 30px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding: 0px 10px;
+    gap: 30px;
+    
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-col li {
+    font-size: 11px;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .social-icons {
+    gap: 12px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 80%;
+  }
+
+  .footer-copy {
+    padding: 0px 10px;
+    margin-top: 30px;
+    font-size: 11px;
+  }
+}
+
+
